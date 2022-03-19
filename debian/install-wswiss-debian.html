@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>How to Install wswiss on debian - AOMIE.IN</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="keywords" content="debian, package, wswiss, install, terminal, command-line, console, install wswiss">
+      <meta name="description" content="Install wswiss on debian with and without using the command line">
+      <meta name="robots" content="index, follow">
+      <meta name="author" content="Aomie">
+      <link rel="icon" href="https://debian.aomie.in/favicon.ico" type="image/x-icon" />
+      <link href="https://aomie.in/css/index.css" rel="stylesheet" type="text/css">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ3RQDC2PG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RZ3RQDC2PG');
+</script>
+      <!--place reserved for scripts two-->
+      <!--place reserved for scripts three-->
+      <!--place reserved for scripts four-->
+      <!--place reserved for scripts five-->
+      <!--place reserved for scripts six-->
+      <!--place reserved for scripts seven-->
+   </head>
+   <body>
+      <!--menu-->
+      <div class="header"><a href="https://debian.aomie.in/"><img class="logo" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/logo_aomie_new.svg"></a></div>
+      <div class="navbar">
+         <a href="https://debian.aomie.in">Home</a>
+         <div class="subnav">
+            <button class="subnavbtn">Linux <span>&#9660;</span><i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content"> <a href="../ubuntu/index.html">Ubuntu</a> <a href="../debian/index.html">Debian</a> <a href="../kali-linux/index.html">Kali Linux</a></div>
+         </div>
+         <a href="../pages/about.html">About Us</a> <a href="../pages/web-privacy.html">Privacy</a> <a href="../pages/contact.html">Contact</a>
+      </div>
+      <!--right sidebar-->
+      <div class="left">
+         <ol class="toc">
+            <li class="toc_li"> <a href="#Introduction">Introduction</a> </li>
+            <li class="toc_li"> <a href="#Install_wswiss_Using_apt">Install wswiss Using apt</a> </li>
+            <li class="toc_li"> <a href="#install-wswiss-using-apt-get">Install wswiss Using apt-get</a> </li>
+            <li class="toc_li"> <a href="#install-wswiss-using-synaptic">Install wswiss Using Synaptic</a> </li>
+            <li class="toc_li"> <a href="#install-wswiss-using-aptitude">Install wswiss Using aptitude</a> </li>
+            <li>
+               <a href="#how-to-upgrade-wswiss-on-debian">How to Upgrade wswiss on debian</a>
+               <ol>
+                  <li> <a href="#upgrade-wswiss-using-apt-apt-get">Upgrade wswiss using Apt & Apt-get
+                     </a> 
+                  </li>
+                  <li> <a href="#upgrade-wswiss-using-aptitude">Upgrade wswiss using Aptitude</a> </li>
+                  <li> <a href="#upgrade-wswiss-using-synaptic">Upgrade wswiss using Synaptic</a> </li>
+               </ol>
+            </li>
+            <li>
+               <a href="#how-to-uninstall-wswiss-on-debian">How To Uninstall wswiss on debian</a>
+               <ol>
+                  <li> <a href="#remove-related-packages-dependencies-configuration-files-of-wswiss">Remove related packages, dependencies & configuration files of wswiss</a> </li>
+                  <li> <a href="#remove-wswiss-using-synaptic-package-manager">Remove wswiss using Synaptic Package Manager</a> </li>
+               </ol>
+            </li>
+            <li class="toc_li"> <a href="#conclusion">Conclusion</a> </li>
+         </ol>
+      </div>
+      <!--left sidebar-->
+      <div class="right">
+         <a href="https://debian.aomie.in/video-tutorial.html"><img class="profile" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/watch-tutorial.svg"></a>
+         <a href="https://debian.aomie.in/index.html"><img class="profile" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/search-tutorials.svg"></a>
+      </div>
+      <!--main-->
+      <div class="main">
+         <!--breadcrumb-->
+         <h1>How to Install wswiss on debian</h1>
+         <div class="breadcrumb">
+            <ul class="breadcrumb">
+               <li><a href="https://debian.aomie.in/">Home</a></li>
+               <li><a href="./index.html">debian</a></li>
+               <li><a href="./install-wswiss-debian.html">wswiss</a></li>
+            </ul>
+         </div>
+         <!--content-->
+         <p>Today in this tutorial, I’ll show you how you can install wswiss on debian with and without using the command line.</p>
+         <h2>Introduction</h2>
+         <p>Installing wswiss on debian is very easy. And with the help of this tutorial, you will be able to easily install, update and uninstall wswiss in just a few steps.</p>
+         <p>In this tutorial I’ll show you four methods to install wswiss, the methods are using <em>apt</em>, <em>apt-get</em>, <em>aptitude</em>, and <em>synaptic</em>. All these methods require you to have an active and stable internet connection and sudo permission.</p>
+         <h2>Install wswiss Using apt</h2>
+         <p>To install wswiss in debian using apt, you will need to run the apt update command first to get the updated list of packages from the repositories.</p>
+         <p>Copy the command given below and paste it in the command line, then press enter. If you are using the sudo command for the first time then you might also need to enter your root password.</p>
+         <code>sudo apt update</code>
+         <p>After you have updated the package list using apt, you can now install wswiss using the apt install command. To do that use the command given below.</p>
+         <code>sudo apt -y install wswiss</code>
+         <p>The installation of wswiss might take a little bit of time depending upon your internet connection and machine configuration.</p>
+         <h2>Install wswiss Using apt-get</h2>
+         <p>To install wswiss using apt-get in debian, you will need to first update the package list using the apt-get update command. Copy, paste, and enter the command given below in the command line.</p>
+         <code>sudo apt-get update</code>
+         <p>After updating the package lists, use the apt-get install command given below to install wswiss.</p>
+         <code>sudo apt-get -y install wswiss</code>
+         <h2>Install wswiss Using Synaptic</h2>
+         <p>To install wswiss using Synaptic you will need to first install Synaptic, you can do that by following the instructions from <a href="https://netmiko.com/linux/debian/install-aptitude-and-synaptic-on-debian-20-04-and-18-04/">here</a>. After installing synaptic follow the steps below to install wswiss on your debian using Synaptic.</p>
+         <p>You can open synaptic by clicking on the menu icon then searching for synaptic or you can open the command line and enter the command given below –</p>
+         <code>sudo synaptic</code>
+         <p>After synaptic opens, click on the search icon and search for wswiss. This will display the wswiss package in the package window, now to install wswiss, click on the checkbox that is on the left side.</p>
+         <p>Then click on Mark for Installation, this will select the wswiss package for installation, now to install it click on the Apply button, you will get a summary window where click on the apply button again to start the download of wswiss.</p>
+         <p>If the download and installation are successful then the checkmark option will turn green.</p>
+         <h2>Install wswiss Using aptitude</h2>
+         <p>To install wswiss on debian using aptitude, you will need to first install Aptitude in your debian. To install Aptitude follow the instructions <a href="https://netmiko.com/linux/debian/install-aptitude-and-synaptic-on-debian-20-04-and-18-04/">here</a>. Once you have aptitude installed proceed to the installation of wswiss.</p>
+         <p>Now you will need to first update your package lists from the repositories, use the apt update command for that, after that update the package list of aptitude using the aptitude update command.</p>
+         <code>sudo apt update</code> <code>sudo aptitude update</code>
+         <p>After updating the package list of aptitude, install wswiss using the command aptitude install wswiss.</p>
+         <code>sudo aptitude -y install wswiss</code>
+         <h2>How to Upgrade wswiss on debian</h2>
+         <p>If you want to upgrade the wswiss package on your debian to its latest version then here’s how you can do that using apt, apt-get, aptitude, and synaptic.</p>
+         <h3>Upgrade wswiss using Apt & Apt-get</h3>
+         <p>To upgrade wswiss to its latest version using apt or apt-get, you will need to open the terminal then run the <em>sudo apt update</em> command to update the package list, after that copy and paste the commands given below to upgrade wswiss.</p>
+         <code>sudo apt install --only-upgrade wswiss</code> <code>sudo apt-get install --only-upgrade wswiss</code>
+         <h3>Upgrade wswiss using Aptitude</h3>
+         <p>To upgrade wswiss using aptitude you will need to again run the update command to update the package list, use command <em>sudo aptitude update</em> to do that. After that run the command given below to upgrade wswiss.</p>
+         <code>sudo aptitude -y full-upgrade wswiss</code>
+         <h3>Upgrade wswiss using Synaptic</h3>
+         <p>To upgrade wswiss using synaptic open synaptic using the command <em>sudo synaptic</em> or by going to the menu and searching for synaptic.</p>
+         <p>In synaptic click on the reload button, this will look for updates. After that you will need to search for wswiss, now right-click wswiss, and click on the mark for upgrade option.</p>
+         <p>Now to upgrade wswiss just click on the apply button, then click on the apply button again in the summary screen.</p>
+         <h2>How To Uninstall wswiss on debian</h2>
+         <p>If you want to remove and uninstall wswiss from your debian then here’s how you can do that. To remove just wswiss, you can use the command that is given below, copy the command, paste it in the command line then press enter.</p>
+         <code>sudo apt remove wswiss</code>
+         <h3>Remove related packages, dependencies & configuration files of wswiss</h3>
+         <p>To remove all the related packages, dependencies and configuration files of wswiss you can use the command given below.</p>
+         <code>sudo apt -y purge wswiss</code>
+         <h3>Remove wswiss using Synaptic Package Manager</h3>
+         <p>You can also uninstall wswiss using the synaptic package manager, first open synaptic using the command sudo synaptic or search and open it directly.</p>
+         <p>After that in synaptic search for wswiss, right-click the wswiss package and click on the Mark for Complete Removal option. Now to uninstall wswiss click on the apply button then in summary click on apply again.</p>
+         <h2>Conclusion</h2>
+         <p>That is how you can install wswiss on debian using the command line or using the synaptic package manager. I also showed you how you can uninstall and upgrade wswiss using the command line or using the synaptic package manager.</p>
+         <p>If you need any help regarding the installation of wswiss then send me a mail at netmikoblog@gmail.com, thank you.</p>
+      </div>
+      <!--left sidebar-->
+      <footer><span>Copyright © 2022 AOMIE.IN | Made with ❤ by AOMIE</footer>
+      <script type="text/javascript">function search(string){
+         window.find(string);
+         }
+      </script>
+      <!--place reserved for footer scripts one-->
+      <!--place reserved for footer scripts two-->
+      <!--place reserved for footer scripts three-->
+      <!--place reserved for footer scripts four-->
+      <!--place reserved for footer scripts five-->
+      <!--place reserved for footer scripts six-->
+      <!--place reserved for footer scripts seven-->
+   </body>
+</html>

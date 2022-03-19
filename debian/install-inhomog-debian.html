@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>How to Install inhomog on debian - AOMIE.IN</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="keywords" content="debian, package, inhomog, install, terminal, command-line, console, install inhomog">
+      <meta name="description" content="Install inhomog on debian with and without using the command line">
+      <meta name="robots" content="index, follow">
+      <meta name="author" content="Aomie">
+      <link rel="icon" href="https://debian.aomie.in/favicon.ico" type="image/x-icon" />
+      <link href="https://aomie.in/css/index.css" rel="stylesheet" type="text/css">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ3RQDC2PG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RZ3RQDC2PG');
+</script>
+      <!--place reserved for scripts two-->
+      <!--place reserved for scripts three-->
+      <!--place reserved for scripts four-->
+      <!--place reserved for scripts five-->
+      <!--place reserved for scripts six-->
+      <!--place reserved for scripts seven-->
+   </head>
+   <body>
+      <!--menu-->
+      <div class="header"><a href="https://debian.aomie.in/"><img class="logo" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/logo_aomie_new.svg"></a></div>
+      <div class="navbar">
+         <a href="https://debian.aomie.in">Home</a>
+         <div class="subnav">
+            <button class="subnavbtn">Linux <span>&#9660;</span><i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content"> <a href="../ubuntu/index.html">Ubuntu</a> <a href="../debian/index.html">Debian</a> <a href="../kali-linux/index.html">Kali Linux</a></div>
+         </div>
+         <a href="../pages/about.html">About Us</a> <a href="../pages/web-privacy.html">Privacy</a> <a href="../pages/contact.html">Contact</a>
+      </div>
+      <!--right sidebar-->
+      <div class="left">
+         <ol class="toc">
+            <li class="toc_li"> <a href="#Introduction">Introduction</a> </li>
+            <li class="toc_li"> <a href="#Install_inhomog_Using_apt">Install inhomog Using apt</a> </li>
+            <li class="toc_li"> <a href="#install-inhomog-using-apt-get">Install inhomog Using apt-get</a> </li>
+            <li class="toc_li"> <a href="#install-inhomog-using-synaptic">Install inhomog Using Synaptic</a> </li>
+            <li class="toc_li"> <a href="#install-inhomog-using-aptitude">Install inhomog Using aptitude</a> </li>
+            <li>
+               <a href="#how-to-upgrade-inhomog-on-debian">How to Upgrade inhomog on debian</a>
+               <ol>
+                  <li> <a href="#upgrade-inhomog-using-apt-apt-get">Upgrade inhomog using Apt & Apt-get
+                     </a> 
+                  </li>
+                  <li> <a href="#upgrade-inhomog-using-aptitude">Upgrade inhomog using Aptitude</a> </li>
+                  <li> <a href="#upgrade-inhomog-using-synaptic">Upgrade inhomog using Synaptic</a> </li>
+               </ol>
+            </li>
+            <li>
+               <a href="#how-to-uninstall-inhomog-on-debian">How To Uninstall inhomog on debian</a>
+               <ol>
+                  <li> <a href="#remove-related-packages-dependencies-configuration-files-of-inhomog">Remove related packages, dependencies & configuration files of inhomog</a> </li>
+                  <li> <a href="#remove-inhomog-using-synaptic-package-manager">Remove inhomog using Synaptic Package Manager</a> </li>
+               </ol>
+            </li>
+            <li class="toc_li"> <a href="#conclusion">Conclusion</a> </li>
+         </ol>
+      </div>
+      <!--left sidebar-->
+      <div class="right">
+         <a href="https://debian.aomie.in/video-tutorial.html"><img class="profile" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/watch-tutorial.svg"></a>
+         <a href="https://debian.aomie.in/index.html"><img class="profile" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/search-tutorials.svg"></a>
+      </div>
+      <!--main-->
+      <div class="main">
+         <!--breadcrumb-->
+         <h1>How to Install inhomog on debian</h1>
+         <div class="breadcrumb">
+            <ul class="breadcrumb">
+               <li><a href="https://debian.aomie.in/">Home</a></li>
+               <li><a href="./index.html">debian</a></li>
+               <li><a href="./install-inhomog-debian.html">inhomog</a></li>
+            </ul>
+         </div>
+         <!--content-->
+         <p>Today in this tutorial, I’ll show you how you can install inhomog on debian with and without using the command line.</p>
+         <h2>Introduction</h2>
+         <p>Installing inhomog on debian is very easy. And with the help of this tutorial, you will be able to easily install, update and uninstall inhomog in just a few steps.</p>
+         <p>In this tutorial I’ll show you four methods to install inhomog, the methods are using <em>apt</em>, <em>apt-get</em>, <em>aptitude</em>, and <em>synaptic</em>. All these methods require you to have an active and stable internet connection and sudo permission.</p>
+         <h2>Install inhomog Using apt</h2>
+         <p>To install inhomog in debian using apt, you will need to run the apt update command first to get the updated list of packages from the repositories.</p>
+         <p>Copy the command given below and paste it in the command line, then press enter. If you are using the sudo command for the first time then you might also need to enter your root password.</p>
+         <code>sudo apt update</code>
+         <p>After you have updated the package list using apt, you can now install inhomog using the apt install command. To do that use the command given below.</p>
+         <code>sudo apt -y install inhomog</code>
+         <p>The installation of inhomog might take a little bit of time depending upon your internet connection and machine configuration.</p>
+         <h2>Install inhomog Using apt-get</h2>
+         <p>To install inhomog using apt-get in debian, you will need to first update the package list using the apt-get update command. Copy, paste, and enter the command given below in the command line.</p>
+         <code>sudo apt-get update</code>
+         <p>After updating the package lists, use the apt-get install command given below to install inhomog.</p>
+         <code>sudo apt-get -y install inhomog</code>
+         <h2>Install inhomog Using Synaptic</h2>
+         <p>To install inhomog using Synaptic you will need to first install Synaptic, you can do that by following the instructions from <a href="https://netmiko.com/linux/debian/install-aptitude-and-synaptic-on-debian-20-04-and-18-04/">here</a>. After installing synaptic follow the steps below to install inhomog on your debian using Synaptic.</p>
+         <p>You can open synaptic by clicking on the menu icon then searching for synaptic or you can open the command line and enter the command given below –</p>
+         <code>sudo synaptic</code>
+         <p>After synaptic opens, click on the search icon and search for inhomog. This will display the inhomog package in the package window, now to install inhomog, click on the checkbox that is on the left side.</p>
+         <p>Then click on Mark for Installation, this will select the inhomog package for installation, now to install it click on the Apply button, you will get a summary window where click on the apply button again to start the download of inhomog.</p>
+         <p>If the download and installation are successful then the checkmark option will turn green.</p>
+         <h2>Install inhomog Using aptitude</h2>
+         <p>To install inhomog on debian using aptitude, you will need to first install Aptitude in your debian. To install Aptitude follow the instructions <a href="https://netmiko.com/linux/debian/install-aptitude-and-synaptic-on-debian-20-04-and-18-04/">here</a>. Once you have aptitude installed proceed to the installation of inhomog.</p>
+         <p>Now you will need to first update your package lists from the repositories, use the apt update command for that, after that update the package list of aptitude using the aptitude update command.</p>
+         <code>sudo apt update</code> <code>sudo aptitude update</code>
+         <p>After updating the package list of aptitude, install inhomog using the command aptitude install inhomog.</p>
+         <code>sudo aptitude -y install inhomog</code>
+         <h2>How to Upgrade inhomog on debian</h2>
+         <p>If you want to upgrade the inhomog package on your debian to its latest version then here’s how you can do that using apt, apt-get, aptitude, and synaptic.</p>
+         <h3>Upgrade inhomog using Apt & Apt-get</h3>
+         <p>To upgrade inhomog to its latest version using apt or apt-get, you will need to open the terminal then run the <em>sudo apt update</em> command to update the package list, after that copy and paste the commands given below to upgrade inhomog.</p>
+         <code>sudo apt install --only-upgrade inhomog</code> <code>sudo apt-get install --only-upgrade inhomog</code>
+         <h3>Upgrade inhomog using Aptitude</h3>
+         <p>To upgrade inhomog using aptitude you will need to again run the update command to update the package list, use command <em>sudo aptitude update</em> to do that. After that run the command given below to upgrade inhomog.</p>
+         <code>sudo aptitude -y full-upgrade inhomog</code>
+         <h3>Upgrade inhomog using Synaptic</h3>
+         <p>To upgrade inhomog using synaptic open synaptic using the command <em>sudo synaptic</em> or by going to the menu and searching for synaptic.</p>
+         <p>In synaptic click on the reload button, this will look for updates. After that you will need to search for inhomog, now right-click inhomog, and click on the mark for upgrade option.</p>
+         <p>Now to upgrade inhomog just click on the apply button, then click on the apply button again in the summary screen.</p>
+         <h2>How To Uninstall inhomog on debian</h2>
+         <p>If you want to remove and uninstall inhomog from your debian then here’s how you can do that. To remove just inhomog, you can use the command that is given below, copy the command, paste it in the command line then press enter.</p>
+         <code>sudo apt remove inhomog</code>
+         <h3>Remove related packages, dependencies & configuration files of inhomog</h3>
+         <p>To remove all the related packages, dependencies and configuration files of inhomog you can use the command given below.</p>
+         <code>sudo apt -y purge inhomog</code>
+         <h3>Remove inhomog using Synaptic Package Manager</h3>
+         <p>You can also uninstall inhomog using the synaptic package manager, first open synaptic using the command sudo synaptic or search and open it directly.</p>
+         <p>After that in synaptic search for inhomog, right-click the inhomog package and click on the Mark for Complete Removal option. Now to uninstall inhomog click on the apply button then in summary click on apply again.</p>
+         <h2>Conclusion</h2>
+         <p>That is how you can install inhomog on debian using the command line or using the synaptic package manager. I also showed you how you can uninstall and upgrade inhomog using the command line or using the synaptic package manager.</p>
+         <p>If you need any help regarding the installation of inhomog then send me a mail at netmikoblog@gmail.com, thank you.</p>
+      </div>
+      <!--left sidebar-->
+      <footer><span>Copyright © 2022 AOMIE.IN | Made with ❤ by AOMIE</footer>
+      <script type="text/javascript">function search(string){
+         window.find(string);
+         }
+      </script>
+      <!--place reserved for footer scripts one-->
+      <!--place reserved for footer scripts two-->
+      <!--place reserved for footer scripts three-->
+      <!--place reserved for footer scripts four-->
+      <!--place reserved for footer scripts five-->
+      <!--place reserved for footer scripts six-->
+      <!--place reserved for footer scripts seven-->
+   </body>
+</html>

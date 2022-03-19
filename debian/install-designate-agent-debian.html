@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>How to Install designate-agent on debian - AOMIE.IN</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="keywords" content="debian, package, designate-agent, install, terminal, command-line, console, install designate-agent">
+      <meta name="description" content="Install designate-agent on debian with and without using the command line">
+      <meta name="robots" content="index, follow">
+      <meta name="author" content="Aomie">
+      <link rel="icon" href="https://debian.aomie.in/favicon.ico" type="image/x-icon" />
+      <link href="https://aomie.in/css/index.css" rel="stylesheet" type="text/css">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ3RQDC2PG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RZ3RQDC2PG');
+</script>
+      <!--place reserved for scripts two-->
+      <!--place reserved for scripts three-->
+      <!--place reserved for scripts four-->
+      <!--place reserved for scripts five-->
+      <!--place reserved for scripts six-->
+      <!--place reserved for scripts seven-->
+   </head>
+   <body>
+      <!--menu-->
+      <div class="header"><a href="https://debian.aomie.in/"><img class="logo" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/logo_aomie_new.svg"></a></div>
+      <div class="navbar">
+         <a href="https://debian.aomie.in">Home</a>
+         <div class="subnav">
+            <button class="subnavbtn">Linux <span>&#9660;</span><i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content"> <a href="../ubuntu/index.html">Ubuntu</a> <a href="../debian/index.html">Debian</a> <a href="../kali-linux/index.html">Kali Linux</a></div>
+         </div>
+         <a href="../pages/about.html">About Us</a> <a href="../pages/web-privacy.html">Privacy</a> <a href="../pages/contact.html">Contact</a>
+      </div>
+      <!--right sidebar-->
+      <div class="left">
+         <ol class="toc">
+            <li class="toc_li"> <a href="#Introduction">Introduction</a> </li>
+            <li class="toc_li"> <a href="#Install_designate-agent_Using_apt">Install designate-agent Using apt</a> </li>
+            <li class="toc_li"> <a href="#install-designate-agent-using-apt-get">Install designate-agent Using apt-get</a> </li>
+            <li class="toc_li"> <a href="#install-designate-agent-using-synaptic">Install designate-agent Using Synaptic</a> </li>
+            <li class="toc_li"> <a href="#install-designate-agent-using-aptitude">Install designate-agent Using aptitude</a> </li>
+            <li>
+               <a href="#how-to-upgrade-designate-agent-on-debian">How to Upgrade designate-agent on debian</a>
+               <ol>
+                  <li> <a href="#upgrade-designate-agent-using-apt-apt-get">Upgrade designate-agent using Apt & Apt-get
+                     </a> 
+                  </li>
+                  <li> <a href="#upgrade-designate-agent-using-aptitude">Upgrade designate-agent using Aptitude</a> </li>
+                  <li> <a href="#upgrade-designate-agent-using-synaptic">Upgrade designate-agent using Synaptic</a> </li>
+               </ol>
+            </li>
+            <li>
+               <a href="#how-to-uninstall-designate-agent-on-debian">How To Uninstall designate-agent on debian</a>
+               <ol>
+                  <li> <a href="#remove-related-packages-dependencies-configuration-files-of-designate-agent">Remove related packages, dependencies & configuration files of designate-agent</a> </li>
+                  <li> <a href="#remove-designate-agent-using-synaptic-package-manager">Remove designate-agent using Synaptic Package Manager</a> </li>
+               </ol>
+            </li>
+            <li class="toc_li"> <a href="#conclusion">Conclusion</a> </li>
+         </ol>
+      </div>
+      <!--left sidebar-->
+      <div class="right">
+         <a href="https://debian.aomie.in/video-tutorial.html"><img class="profile" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/watch-tutorial.svg"></a>
+         <a href="https://debian.aomie.in/index.html"><img class="profile" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/search-tutorials.svg"></a>
+      </div>
+      <!--main-->
+      <div class="main">
+         <!--breadcrumb-->
+         <h1>How to Install designate-agent on debian</h1>
+         <div class="breadcrumb">
+            <ul class="breadcrumb">
+               <li><a href="https://debian.aomie.in/">Home</a></li>
+               <li><a href="./index.html">debian</a></li>
+               <li><a href="./install-designate-agent-debian.html">designate-agent</a></li>
+            </ul>
+         </div>
+         <!--content-->
+         <p>Today in this tutorial, I’ll show you how you can install designate-agent on debian with and without using the command line.</p>
+         <h2>Introduction</h2>
+         <p>Installing designate-agent on debian is very easy. And with the help of this tutorial, you will be able to easily install, update and uninstall designate-agent in just a few steps.</p>
+         <p>In this tutorial I’ll show you four methods to install designate-agent, the methods are using <em>apt</em>, <em>apt-get</em>, <em>aptitude</em>, and <em>synaptic</em>. All these methods require you to have an active and stable internet connection and sudo permission.</p>
+         <h2>Install designate-agent Using apt</h2>
+         <p>To install designate-agent in debian using apt, you will need to run the apt update command first to get the updated list of packages from the repositories.</p>
+         <p>Copy the command given below and paste it in the command line, then press enter. If you are using the sudo command for the first time then you might also need to enter your root password.</p>
+         <code>sudo apt update</code>
+         <p>After you have updated the package list using apt, you can now install designate-agent using the apt install command. To do that use the command given below.</p>
+         <code>sudo apt -y install designate-agent</code>
+         <p>The installation of designate-agent might take a little bit of time depending upon your internet connection and machine configuration.</p>
+         <h2>Install designate-agent Using apt-get</h2>
+         <p>To install designate-agent using apt-get in debian, you will need to first update the package list using the apt-get update command. Copy, paste, and enter the command given below in the command line.</p>
+         <code>sudo apt-get update</code>
+         <p>After updating the package lists, use the apt-get install command given below to install designate-agent.</p>
+         <code>sudo apt-get -y install designate-agent</code>
+         <h2>Install designate-agent Using Synaptic</h2>
+         <p>To install designate-agent using Synaptic you will need to first install Synaptic, you can do that by following the instructions from <a href="https://netmiko.com/linux/debian/install-aptitude-and-synaptic-on-debian-20-04-and-18-04/">here</a>. After installing synaptic follow the steps below to install designate-agent on your debian using Synaptic.</p>
+         <p>You can open synaptic by clicking on the menu icon then searching for synaptic or you can open the command line and enter the command given below –</p>
+         <code>sudo synaptic</code>
+         <p>After synaptic opens, click on the search icon and search for designate-agent. This will display the designate-agent package in the package window, now to install designate-agent, click on the checkbox that is on the left side.</p>
+         <p>Then click on Mark for Installation, this will select the designate-agent package for installation, now to install it click on the Apply button, you will get a summary window where click on the apply button again to start the download of designate-agent.</p>
+         <p>If the download and installation are successful then the checkmark option will turn green.</p>
+         <h2>Install designate-agent Using aptitude</h2>
+         <p>To install designate-agent on debian using aptitude, you will need to first install Aptitude in your debian. To install Aptitude follow the instructions <a href="https://netmiko.com/linux/debian/install-aptitude-and-synaptic-on-debian-20-04-and-18-04/">here</a>. Once you have aptitude installed proceed to the installation of designate-agent.</p>
+         <p>Now you will need to first update your package lists from the repositories, use the apt update command for that, after that update the package list of aptitude using the aptitude update command.</p>
+         <code>sudo apt update</code> <code>sudo aptitude update</code>
+         <p>After updating the package list of aptitude, install designate-agent using the command aptitude install designate-agent.</p>
+         <code>sudo aptitude -y install designate-agent</code>
+         <h2>How to Upgrade designate-agent on debian</h2>
+         <p>If you want to upgrade the designate-agent package on your debian to its latest version then here’s how you can do that using apt, apt-get, aptitude, and synaptic.</p>
+         <h3>Upgrade designate-agent using Apt & Apt-get</h3>
+         <p>To upgrade designate-agent to its latest version using apt or apt-get, you will need to open the terminal then run the <em>sudo apt update</em> command to update the package list, after that copy and paste the commands given below to upgrade designate-agent.</p>
+         <code>sudo apt install --only-upgrade designate-agent</code> <code>sudo apt-get install --only-upgrade designate-agent</code>
+         <h3>Upgrade designate-agent using Aptitude</h3>
+         <p>To upgrade designate-agent using aptitude you will need to again run the update command to update the package list, use command <em>sudo aptitude update</em> to do that. After that run the command given below to upgrade designate-agent.</p>
+         <code>sudo aptitude -y full-upgrade designate-agent</code>
+         <h3>Upgrade designate-agent using Synaptic</h3>
+         <p>To upgrade designate-agent using synaptic open synaptic using the command <em>sudo synaptic</em> or by going to the menu and searching for synaptic.</p>
+         <p>In synaptic click on the reload button, this will look for updates. After that you will need to search for designate-agent, now right-click designate-agent, and click on the mark for upgrade option.</p>
+         <p>Now to upgrade designate-agent just click on the apply button, then click on the apply button again in the summary screen.</p>
+         <h2>How To Uninstall designate-agent on debian</h2>
+         <p>If you want to remove and uninstall designate-agent from your debian then here’s how you can do that. To remove just designate-agent, you can use the command that is given below, copy the command, paste it in the command line then press enter.</p>
+         <code>sudo apt remove designate-agent</code>
+         <h3>Remove related packages, dependencies & configuration files of designate-agent</h3>
+         <p>To remove all the related packages, dependencies and configuration files of designate-agent you can use the command given below.</p>
+         <code>sudo apt -y purge designate-agent</code>
+         <h3>Remove designate-agent using Synaptic Package Manager</h3>
+         <p>You can also uninstall designate-agent using the synaptic package manager, first open synaptic using the command sudo synaptic or search and open it directly.</p>
+         <p>After that in synaptic search for designate-agent, right-click the designate-agent package and click on the Mark for Complete Removal option. Now to uninstall designate-agent click on the apply button then in summary click on apply again.</p>
+         <h2>Conclusion</h2>
+         <p>That is how you can install designate-agent on debian using the command line or using the synaptic package manager. I also showed you how you can uninstall and upgrade designate-agent using the command line or using the synaptic package manager.</p>
+         <p>If you need any help regarding the installation of designate-agent then send me a mail at netmikoblog@gmail.com, thank you.</p>
+      </div>
+      <!--left sidebar-->
+      <footer><span>Copyright © 2022 AOMIE.IN | Made with ❤ by AOMIE</footer>
+      <script type="text/javascript">function search(string){
+         window.find(string);
+         }
+      </script>
+      <!--place reserved for footer scripts one-->
+      <!--place reserved for footer scripts two-->
+      <!--place reserved for footer scripts three-->
+      <!--place reserved for footer scripts four-->
+      <!--place reserved for footer scripts five-->
+      <!--place reserved for footer scripts six-->
+      <!--place reserved for footer scripts seven-->
+   </body>
+</html>

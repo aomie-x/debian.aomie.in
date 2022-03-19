@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>How to Install filter on debian - AOMIE.IN</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="keywords" content="debian, package, filter, install, terminal, command-line, console, install filter">
+      <meta name="description" content="Install filter on debian with and without using the command line">
+      <meta name="robots" content="index, follow">
+      <meta name="author" content="Aomie">
+      <link rel="icon" href="https://debian.aomie.in/favicon.ico" type="image/x-icon" />
+      <link href="https://aomie.in/css/index.css" rel="stylesheet" type="text/css">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ3RQDC2PG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RZ3RQDC2PG');
+</script>
+      <!--place reserved for scripts two-->
+      <!--place reserved for scripts three-->
+      <!--place reserved for scripts four-->
+      <!--place reserved for scripts five-->
+      <!--place reserved for scripts six-->
+      <!--place reserved for scripts seven-->
+   </head>
+   <body>
+      <!--menu-->
+      <div class="header"><a href="https://debian.aomie.in/"><img class="logo" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/logo_aomie_new.svg"></a></div>
+      <div class="navbar">
+         <a href="https://debian.aomie.in">Home</a>
+         <div class="subnav">
+            <button class="subnavbtn">Linux <span>&#9660;</span><i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content"> <a href="../ubuntu/index.html">Ubuntu</a> <a href="../debian/index.html">Debian</a> <a href="../kali-linux/index.html">Kali Linux</a></div>
+         </div>
+         <a href="../pages/about.html">About Us</a> <a href="../pages/web-privacy.html">Privacy</a> <a href="../pages/contact.html">Contact</a>
+      </div>
+      <!--right sidebar-->
+      <div class="left">
+         <ol class="toc">
+            <li class="toc_li"> <a href="#Introduction">Introduction</a> </li>
+            <li class="toc_li"> <a href="#Install_filter_Using_apt">Install filter Using apt</a> </li>
+            <li class="toc_li"> <a href="#install-filter-using-apt-get">Install filter Using apt-get</a> </li>
+            <li class="toc_li"> <a href="#install-filter-using-synaptic">Install filter Using Synaptic</a> </li>
+            <li class="toc_li"> <a href="#install-filter-using-aptitude">Install filter Using aptitude</a> </li>
+            <li>
+               <a href="#how-to-upgrade-filter-on-debian">How to Upgrade filter on debian</a>
+               <ol>
+                  <li> <a href="#upgrade-filter-using-apt-apt-get">Upgrade filter using Apt & Apt-get
+                     </a> 
+                  </li>
+                  <li> <a href="#upgrade-filter-using-aptitude">Upgrade filter using Aptitude</a> </li>
+                  <li> <a href="#upgrade-filter-using-synaptic">Upgrade filter using Synaptic</a> </li>
+               </ol>
+            </li>
+            <li>
+               <a href="#how-to-uninstall-filter-on-debian">How To Uninstall filter on debian</a>
+               <ol>
+                  <li> <a href="#remove-related-packages-dependencies-configuration-files-of-filter">Remove related packages, dependencies & configuration files of filter</a> </li>
+                  <li> <a href="#remove-filter-using-synaptic-package-manager">Remove filter using Synaptic Package Manager</a> </li>
+               </ol>
+            </li>
+            <li class="toc_li"> <a href="#conclusion">Conclusion</a> </li>
+         </ol>
+      </div>
+      <!--left sidebar-->
+      <div class="right">
+         <a href="https://debian.aomie.in/video-tutorial.html"><img class="profile" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/watch-tutorial.svg"></a>
+         <a href="https://debian.aomie.in/index.html"><img class="profile" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/search-tutorials.svg"></a>
+      </div>
+      <!--main-->
+      <div class="main">
+         <!--breadcrumb-->
+         <h1>How to Install filter on debian</h1>
+         <div class="breadcrumb">
+            <ul class="breadcrumb">
+               <li><a href="https://debian.aomie.in/">Home</a></li>
+               <li><a href="./index.html">debian</a></li>
+               <li><a href="./install-filter-debian.html">filter</a></li>
+            </ul>
+         </div>
+         <!--content-->
+         <p>Today in this tutorial, I’ll show you how you can install filter on debian with and without using the command line.</p>
+         <h2>Introduction</h2>
+         <p>Installing filter on debian is very easy. And with the help of this tutorial, you will be able to easily install, update and uninstall filter in just a few steps.</p>
+         <p>In this tutorial I’ll show you four methods to install filter, the methods are using <em>apt</em>, <em>apt-get</em>, <em>aptitude</em>, and <em>synaptic</em>. All these methods require you to have an active and stable internet connection and sudo permission.</p>
+         <h2>Install filter Using apt</h2>
+         <p>To install filter in debian using apt, you will need to run the apt update command first to get the updated list of packages from the repositories.</p>
+         <p>Copy the command given below and paste it in the command line, then press enter. If you are using the sudo command for the first time then you might also need to enter your root password.</p>
+         <code>sudo apt update</code>
+         <p>After you have updated the package list using apt, you can now install filter using the apt install command. To do that use the command given below.</p>
+         <code>sudo apt -y install filter</code>
+         <p>The installation of filter might take a little bit of time depending upon your internet connection and machine configuration.</p>
+         <h2>Install filter Using apt-get</h2>
+         <p>To install filter using apt-get in debian, you will need to first update the package list using the apt-get update command. Copy, paste, and enter the command given below in the command line.</p>
+         <code>sudo apt-get update</code>
+         <p>After updating the package lists, use the apt-get install command given below to install filter.</p>
+         <code>sudo apt-get -y install filter</code>
+         <h2>Install filter Using Synaptic</h2>
+         <p>To install filter using Synaptic you will need to first install Synaptic, you can do that by following the instructions from <a href="https://netmiko.com/linux/debian/install-aptitude-and-synaptic-on-debian-20-04-and-18-04/">here</a>. After installing synaptic follow the steps below to install filter on your debian using Synaptic.</p>
+         <p>You can open synaptic by clicking on the menu icon then searching for synaptic or you can open the command line and enter the command given below –</p>
+         <code>sudo synaptic</code>
+         <p>After synaptic opens, click on the search icon and search for filter. This will display the filter package in the package window, now to install filter, click on the checkbox that is on the left side.</p>
+         <p>Then click on Mark for Installation, this will select the filter package for installation, now to install it click on the Apply button, you will get a summary window where click on the apply button again to start the download of filter.</p>
+         <p>If the download and installation are successful then the checkmark option will turn green.</p>
+         <h2>Install filter Using aptitude</h2>
+         <p>To install filter on debian using aptitude, you will need to first install Aptitude in your debian. To install Aptitude follow the instructions <a href="https://netmiko.com/linux/debian/install-aptitude-and-synaptic-on-debian-20-04-and-18-04/">here</a>. Once you have aptitude installed proceed to the installation of filter.</p>
+         <p>Now you will need to first update your package lists from the repositories, use the apt update command for that, after that update the package list of aptitude using the aptitude update command.</p>
+         <code>sudo apt update</code> <code>sudo aptitude update</code>
+         <p>After updating the package list of aptitude, install filter using the command aptitude install filter.</p>
+         <code>sudo aptitude -y install filter</code>
+         <h2>How to Upgrade filter on debian</h2>
+         <p>If you want to upgrade the filter package on your debian to its latest version then here’s how you can do that using apt, apt-get, aptitude, and synaptic.</p>
+         <h3>Upgrade filter using Apt & Apt-get</h3>
+         <p>To upgrade filter to its latest version using apt or apt-get, you will need to open the terminal then run the <em>sudo apt update</em> command to update the package list, after that copy and paste the commands given below to upgrade filter.</p>
+         <code>sudo apt install --only-upgrade filter</code> <code>sudo apt-get install --only-upgrade filter</code>
+         <h3>Upgrade filter using Aptitude</h3>
+         <p>To upgrade filter using aptitude you will need to again run the update command to update the package list, use command <em>sudo aptitude update</em> to do that. After that run the command given below to upgrade filter.</p>
+         <code>sudo aptitude -y full-upgrade filter</code>
+         <h3>Upgrade filter using Synaptic</h3>
+         <p>To upgrade filter using synaptic open synaptic using the command <em>sudo synaptic</em> or by going to the menu and searching for synaptic.</p>
+         <p>In synaptic click on the reload button, this will look for updates. After that you will need to search for filter, now right-click filter, and click on the mark for upgrade option.</p>
+         <p>Now to upgrade filter just click on the apply button, then click on the apply button again in the summary screen.</p>
+         <h2>How To Uninstall filter on debian</h2>
+         <p>If you want to remove and uninstall filter from your debian then here’s how you can do that. To remove just filter, you can use the command that is given below, copy the command, paste it in the command line then press enter.</p>
+         <code>sudo apt remove filter</code>
+         <h3>Remove related packages, dependencies & configuration files of filter</h3>
+         <p>To remove all the related packages, dependencies and configuration files of filter you can use the command given below.</p>
+         <code>sudo apt -y purge filter</code>
+         <h3>Remove filter using Synaptic Package Manager</h3>
+         <p>You can also uninstall filter using the synaptic package manager, first open synaptic using the command sudo synaptic or search and open it directly.</p>
+         <p>After that in synaptic search for filter, right-click the filter package and click on the Mark for Complete Removal option. Now to uninstall filter click on the apply button then in summary click on apply again.</p>
+         <h2>Conclusion</h2>
+         <p>That is how you can install filter on debian using the command line or using the synaptic package manager. I also showed you how you can uninstall and upgrade filter using the command line or using the synaptic package manager.</p>
+         <p>If you need any help regarding the installation of filter then send me a mail at netmikoblog@gmail.com, thank you.</p>
+      </div>
+      <!--left sidebar-->
+      <footer><span>Copyright © 2022 AOMIE.IN | Made with ❤ by AOMIE</footer>
+      <script type="text/javascript">function search(string){
+         window.find(string);
+         }
+      </script>
+      <!--place reserved for footer scripts one-->
+      <!--place reserved for footer scripts two-->
+      <!--place reserved for footer scripts three-->
+      <!--place reserved for footer scripts four-->
+      <!--place reserved for footer scripts five-->
+      <!--place reserved for footer scripts six-->
+      <!--place reserved for footer scripts seven-->
+   </body>
+</html>

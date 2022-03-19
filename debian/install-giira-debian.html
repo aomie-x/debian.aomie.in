@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>How to Install giira on debian - AOMIE.IN</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="keywords" content="debian, package, giira, install, terminal, command-line, console, install giira">
+      <meta name="description" content="Install giira on debian with and without using the command line">
+      <meta name="robots" content="index, follow">
+      <meta name="author" content="Aomie">
+      <link rel="icon" href="https://debian.aomie.in/favicon.ico" type="image/x-icon" />
+      <link href="https://aomie.in/css/index.css" rel="stylesheet" type="text/css">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ3RQDC2PG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RZ3RQDC2PG');
+</script>
+      <!--place reserved for scripts two-->
+      <!--place reserved for scripts three-->
+      <!--place reserved for scripts four-->
+      <!--place reserved for scripts five-->
+      <!--place reserved for scripts six-->
+      <!--place reserved for scripts seven-->
+   </head>
+   <body>
+      <!--menu-->
+      <div class="header"><a href="https://debian.aomie.in/"><img class="logo" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/logo_aomie_new.svg"></a></div>
+      <div class="navbar">
+         <a href="https://debian.aomie.in">Home</a>
+         <div class="subnav">
+            <button class="subnavbtn">Linux <span>&#9660;</span><i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content"> <a href="../ubuntu/index.html">Ubuntu</a> <a href="../debian/index.html">Debian</a> <a href="../kali-linux/index.html">Kali Linux</a></div>
+         </div>
+         <a href="../pages/about.html">About Us</a> <a href="../pages/web-privacy.html">Privacy</a> <a href="../pages/contact.html">Contact</a>
+      </div>
+      <!--right sidebar-->
+      <div class="left">
+         <ol class="toc">
+            <li class="toc_li"> <a href="#Introduction">Introduction</a> </li>
+            <li class="toc_li"> <a href="#Install_giira_Using_apt">Install giira Using apt</a> </li>
+            <li class="toc_li"> <a href="#install-giira-using-apt-get">Install giira Using apt-get</a> </li>
+            <li class="toc_li"> <a href="#install-giira-using-synaptic">Install giira Using Synaptic</a> </li>
+            <li class="toc_li"> <a href="#install-giira-using-aptitude">Install giira Using aptitude</a> </li>
+            <li>
+               <a href="#how-to-upgrade-giira-on-debian">How to Upgrade giira on debian</a>
+               <ol>
+                  <li> <a href="#upgrade-giira-using-apt-apt-get">Upgrade giira using Apt & Apt-get
+                     </a> 
+                  </li>
+                  <li> <a href="#upgrade-giira-using-aptitude">Upgrade giira using Aptitude</a> </li>
+                  <li> <a href="#upgrade-giira-using-synaptic">Upgrade giira using Synaptic</a> </li>
+               </ol>
+            </li>
+            <li>
+               <a href="#how-to-uninstall-giira-on-debian">How To Uninstall giira on debian</a>
+               <ol>
+                  <li> <a href="#remove-related-packages-dependencies-configuration-files-of-giira">Remove related packages, dependencies & configuration files of giira</a> </li>
+                  <li> <a href="#remove-giira-using-synaptic-package-manager">Remove giira using Synaptic Package Manager</a> </li>
+               </ol>
+            </li>
+            <li class="toc_li"> <a href="#conclusion">Conclusion</a> </li>
+         </ol>
+      </div>
+      <!--left sidebar-->
+      <div class="right">
+         <a href="https://debian.aomie.in/video-tutorial.html"><img class="profile" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/watch-tutorial.svg"></a>
+         <a href="https://debian.aomie.in/index.html"><img class="profile" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/search-tutorials.svg"></a>
+      </div>
+      <!--main-->
+      <div class="main">
+         <!--breadcrumb-->
+         <h1>How to Install giira on debian</h1>
+         <div class="breadcrumb">
+            <ul class="breadcrumb">
+               <li><a href="https://debian.aomie.in/">Home</a></li>
+               <li><a href="./index.html">debian</a></li>
+               <li><a href="./install-giira-debian.html">giira</a></li>
+            </ul>
+         </div>
+         <!--content-->
+         <p>Today in this tutorial, I’ll show you how you can install giira on debian with and without using the command line.</p>
+         <h2>Introduction</h2>
+         <p>Installing giira on debian is very easy. And with the help of this tutorial, you will be able to easily install, update and uninstall giira in just a few steps.</p>
+         <p>In this tutorial I’ll show you four methods to install giira, the methods are using <em>apt</em>, <em>apt-get</em>, <em>aptitude</em>, and <em>synaptic</em>. All these methods require you to have an active and stable internet connection and sudo permission.</p>
+         <h2>Install giira Using apt</h2>
+         <p>To install giira in debian using apt, you will need to run the apt update command first to get the updated list of packages from the repositories.</p>
+         <p>Copy the command given below and paste it in the command line, then press enter. If you are using the sudo command for the first time then you might also need to enter your root password.</p>
+         <code>sudo apt update</code>
+         <p>After you have updated the package list using apt, you can now install giira using the apt install command. To do that use the command given below.</p>
+         <code>sudo apt -y install giira</code>
+         <p>The installation of giira might take a little bit of time depending upon your internet connection and machine configuration.</p>
+         <h2>Install giira Using apt-get</h2>
+         <p>To install giira using apt-get in debian, you will need to first update the package list using the apt-get update command. Copy, paste, and enter the command given below in the command line.</p>
+         <code>sudo apt-get update</code>
+         <p>After updating the package lists, use the apt-get install command given below to install giira.</p>
+         <code>sudo apt-get -y install giira</code>
+         <h2>Install giira Using Synaptic</h2>
+         <p>To install giira using Synaptic you will need to first install Synaptic, you can do that by following the instructions from <a href="https://netmiko.com/linux/debian/install-aptitude-and-synaptic-on-debian-20-04-and-18-04/">here</a>. After installing synaptic follow the steps below to install giira on your debian using Synaptic.</p>
+         <p>You can open synaptic by clicking on the menu icon then searching for synaptic or you can open the command line and enter the command given below –</p>
+         <code>sudo synaptic</code>
+         <p>After synaptic opens, click on the search icon and search for giira. This will display the giira package in the package window, now to install giira, click on the checkbox that is on the left side.</p>
+         <p>Then click on Mark for Installation, this will select the giira package for installation, now to install it click on the Apply button, you will get a summary window where click on the apply button again to start the download of giira.</p>
+         <p>If the download and installation are successful then the checkmark option will turn green.</p>
+         <h2>Install giira Using aptitude</h2>
+         <p>To install giira on debian using aptitude, you will need to first install Aptitude in your debian. To install Aptitude follow the instructions <a href="https://netmiko.com/linux/debian/install-aptitude-and-synaptic-on-debian-20-04-and-18-04/">here</a>. Once you have aptitude installed proceed to the installation of giira.</p>
+         <p>Now you will need to first update your package lists from the repositories, use the apt update command for that, after that update the package list of aptitude using the aptitude update command.</p>
+         <code>sudo apt update</code> <code>sudo aptitude update</code>
+         <p>After updating the package list of aptitude, install giira using the command aptitude install giira.</p>
+         <code>sudo aptitude -y install giira</code>
+         <h2>How to Upgrade giira on debian</h2>
+         <p>If you want to upgrade the giira package on your debian to its latest version then here’s how you can do that using apt, apt-get, aptitude, and synaptic.</p>
+         <h3>Upgrade giira using Apt & Apt-get</h3>
+         <p>To upgrade giira to its latest version using apt or apt-get, you will need to open the terminal then run the <em>sudo apt update</em> command to update the package list, after that copy and paste the commands given below to upgrade giira.</p>
+         <code>sudo apt install --only-upgrade giira</code> <code>sudo apt-get install --only-upgrade giira</code>
+         <h3>Upgrade giira using Aptitude</h3>
+         <p>To upgrade giira using aptitude you will need to again run the update command to update the package list, use command <em>sudo aptitude update</em> to do that. After that run the command given below to upgrade giira.</p>
+         <code>sudo aptitude -y full-upgrade giira</code>
+         <h3>Upgrade giira using Synaptic</h3>
+         <p>To upgrade giira using synaptic open synaptic using the command <em>sudo synaptic</em> or by going to the menu and searching for synaptic.</p>
+         <p>In synaptic click on the reload button, this will look for updates. After that you will need to search for giira, now right-click giira, and click on the mark for upgrade option.</p>
+         <p>Now to upgrade giira just click on the apply button, then click on the apply button again in the summary screen.</p>
+         <h2>How To Uninstall giira on debian</h2>
+         <p>If you want to remove and uninstall giira from your debian then here’s how you can do that. To remove just giira, you can use the command that is given below, copy the command, paste it in the command line then press enter.</p>
+         <code>sudo apt remove giira</code>
+         <h3>Remove related packages, dependencies & configuration files of giira</h3>
+         <p>To remove all the related packages, dependencies and configuration files of giira you can use the command given below.</p>
+         <code>sudo apt -y purge giira</code>
+         <h3>Remove giira using Synaptic Package Manager</h3>
+         <p>You can also uninstall giira using the synaptic package manager, first open synaptic using the command sudo synaptic or search and open it directly.</p>
+         <p>After that in synaptic search for giira, right-click the giira package and click on the Mark for Complete Removal option. Now to uninstall giira click on the apply button then in summary click on apply again.</p>
+         <h2>Conclusion</h2>
+         <p>That is how you can install giira on debian using the command line or using the synaptic package manager. I also showed you how you can uninstall and upgrade giira using the command line or using the synaptic package manager.</p>
+         <p>If you need any help regarding the installation of giira then send me a mail at netmikoblog@gmail.com, thank you.</p>
+      </div>
+      <!--left sidebar-->
+      <footer><span>Copyright © 2022 AOMIE.IN | Made with ❤ by AOMIE</footer>
+      <script type="text/javascript">function search(string){
+         window.find(string);
+         }
+      </script>
+      <!--place reserved for footer scripts one-->
+      <!--place reserved for footer scripts two-->
+      <!--place reserved for footer scripts three-->
+      <!--place reserved for footer scripts four-->
+      <!--place reserved for footer scripts five-->
+      <!--place reserved for footer scripts six-->
+      <!--place reserved for footer scripts seven-->
+   </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>How to Install firmware-ath9k-htc-dbgsym on debian - AOMIE.IN</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="keywords" content="debian, package, firmware-ath9k-htc-dbgsym, install, terminal, command-line, console, install firmware-ath9k-htc-dbgsym">
+      <meta name="description" content="Install firmware-ath9k-htc-dbgsym on debian with and without using the command line">
+      <meta name="robots" content="index, follow">
+      <meta name="author" content="Aomie">
+      <link rel="icon" href="https://debian.aomie.in/favicon.ico" type="image/x-icon" />
+      <link href="https://aomie.in/css/index.css" rel="stylesheet" type="text/css">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ3RQDC2PG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RZ3RQDC2PG');
+</script>
+      <!--place reserved for scripts two-->
+      <!--place reserved for scripts three-->
+      <!--place reserved for scripts four-->
+      <!--place reserved for scripts five-->
+      <!--place reserved for scripts six-->
+      <!--place reserved for scripts seven-->
+   </head>
+   <body>
+      <!--menu-->
+      <div class="header"><a href="https://debian.aomie.in/"><img class="logo" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/logo_aomie_new.svg"></a></div>
+      <div class="navbar">
+         <a href="https://debian.aomie.in">Home</a>
+         <div class="subnav">
+            <button class="subnavbtn">Linux <span>&#9660;</span><i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content"> <a href="../ubuntu/index.html">Ubuntu</a> <a href="../debian/index.html">Debian</a> <a href="../kali-linux/index.html">Kali Linux</a></div>
+         </div>
+         <a href="../pages/about.html">About Us</a> <a href="../pages/web-privacy.html">Privacy</a> <a href="../pages/contact.html">Contact</a>
+      </div>
+      <!--right sidebar-->
+      <div class="left">
+         <ol class="toc">
+            <li class="toc_li"> <a href="#Introduction">Introduction</a> </li>
+            <li class="toc_li"> <a href="#Install_firmware-ath9k-htc-dbgsym_Using_apt">Install firmware-ath9k-htc-dbgsym Using apt</a> </li>
+            <li class="toc_li"> <a href="#install-firmware-ath9k-htc-dbgsym-using-apt-get">Install firmware-ath9k-htc-dbgsym Using apt-get</a> </li>
+            <li class="toc_li"> <a href="#install-firmware-ath9k-htc-dbgsym-using-synaptic">Install firmware-ath9k-htc-dbgsym Using Synaptic</a> </li>
+            <li class="toc_li"> <a href="#install-firmware-ath9k-htc-dbgsym-using-aptitude">Install firmware-ath9k-htc-dbgsym Using aptitude</a> </li>
+            <li>
+               <a href="#how-to-upgrade-firmware-ath9k-htc-dbgsym-on-debian">How to Upgrade firmware-ath9k-htc-dbgsym on debian</a>
+               <ol>
+                  <li> <a href="#upgrade-firmware-ath9k-htc-dbgsym-using-apt-apt-get">Upgrade firmware-ath9k-htc-dbgsym using Apt & Apt-get
+                     </a> 
+                  </li>
+                  <li> <a href="#upgrade-firmware-ath9k-htc-dbgsym-using-aptitude">Upgrade firmware-ath9k-htc-dbgsym using Aptitude</a> </li>
+                  <li> <a href="#upgrade-firmware-ath9k-htc-dbgsym-using-synaptic">Upgrade firmware-ath9k-htc-dbgsym using Synaptic</a> </li>
+               </ol>
+            </li>
+            <li>
+               <a href="#how-to-uninstall-firmware-ath9k-htc-dbgsym-on-debian">How To Uninstall firmware-ath9k-htc-dbgsym on debian</a>
+               <ol>
+                  <li> <a href="#remove-related-packages-dependencies-configuration-files-of-firmware-ath9k-htc-dbgsym">Remove related packages, dependencies & configuration files of firmware-ath9k-htc-dbgsym</a> </li>
+                  <li> <a href="#remove-firmware-ath9k-htc-dbgsym-using-synaptic-package-manager">Remove firmware-ath9k-htc-dbgsym using Synaptic Package Manager</a> </li>
+               </ol>
+            </li>
+            <li class="toc_li"> <a href="#conclusion">Conclusion</a> </li>
+         </ol>
+      </div>
+      <!--left sidebar-->
+      <div class="right">
+         <a href="https://debian.aomie.in/video-tutorial.html"><img class="profile" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/watch-tutorial.svg"></a>
+         <a href="https://debian.aomie.in/index.html"><img class="profile" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/search-tutorials.svg"></a>
+      </div>
+      <!--main-->
+      <div class="main">
+         <!--breadcrumb-->
+         <h1>How to Install firmware-ath9k-htc-dbgsym on debian</h1>
+         <div class="breadcrumb">
+            <ul class="breadcrumb">
+               <li><a href="https://debian.aomie.in/">Home</a></li>
+               <li><a href="./index.html">debian</a></li>
+               <li><a href="./install-firmware-ath9k-htc-dbgsym-debian.html">firmware-ath9k-htc-dbgsym</a></li>
+            </ul>
+         </div>
+         <!--content-->
+         <p>Today in this tutorial, I’ll show you how you can install firmware-ath9k-htc-dbgsym on debian with and without using the command line.</p>
+         <h2>Introduction</h2>
+         <p>Installing firmware-ath9k-htc-dbgsym on debian is very easy. And with the help of this tutorial, you will be able to easily install, update and uninstall firmware-ath9k-htc-dbgsym in just a few steps.</p>
+         <p>In this tutorial I’ll show you four methods to install firmware-ath9k-htc-dbgsym, the methods are using <em>apt</em>, <em>apt-get</em>, <em>aptitude</em>, and <em>synaptic</em>. All these methods require you to have an active and stable internet connection and sudo permission.</p>
+         <h2>Install firmware-ath9k-htc-dbgsym Using apt</h2>
+         <p>To install firmware-ath9k-htc-dbgsym in debian using apt, you will need to run the apt update command first to get the updated list of packages from the repositories.</p>
+         <p>Copy the command given below and paste it in the command line, then press enter. If you are using the sudo command for the first time then you might also need to enter your root password.</p>
+         <code>sudo apt update</code>
+         <p>After you have updated the package list using apt, you can now install firmware-ath9k-htc-dbgsym using the apt install command. To do that use the command given below.</p>
+         <code>sudo apt -y install firmware-ath9k-htc-dbgsym</code>
+         <p>The installation of firmware-ath9k-htc-dbgsym might take a little bit of time depending upon your internet connection and machine configuration.</p>
+         <h2>Install firmware-ath9k-htc-dbgsym Using apt-get</h2>
+         <p>To install firmware-ath9k-htc-dbgsym using apt-get in debian, you will need to first update the package list using the apt-get update command. Copy, paste, and enter the command given below in the command line.</p>
+         <code>sudo apt-get update</code>
+         <p>After updating the package lists, use the apt-get install command given below to install firmware-ath9k-htc-dbgsym.</p>
+         <code>sudo apt-get -y install firmware-ath9k-htc-dbgsym</code>
+         <h2>Install firmware-ath9k-htc-dbgsym Using Synaptic</h2>
+         <p>To install firmware-ath9k-htc-dbgsym using Synaptic you will need to first install Synaptic, you can do that by following the instructions from <a href="https://netmiko.com/linux/debian/install-aptitude-and-synaptic-on-debian-20-04-and-18-04/">here</a>. After installing synaptic follow the steps below to install firmware-ath9k-htc-dbgsym on your debian using Synaptic.</p>
+         <p>You can open synaptic by clicking on the menu icon then searching for synaptic or you can open the command line and enter the command given below –</p>
+         <code>sudo synaptic</code>
+         <p>After synaptic opens, click on the search icon and search for firmware-ath9k-htc-dbgsym. This will display the firmware-ath9k-htc-dbgsym package in the package window, now to install firmware-ath9k-htc-dbgsym, click on the checkbox that is on the left side.</p>
+         <p>Then click on Mark for Installation, this will select the firmware-ath9k-htc-dbgsym package for installation, now to install it click on the Apply button, you will get a summary window where click on the apply button again to start the download of firmware-ath9k-htc-dbgsym.</p>
+         <p>If the download and installation are successful then the checkmark option will turn green.</p>
+         <h2>Install firmware-ath9k-htc-dbgsym Using aptitude</h2>
+         <p>To install firmware-ath9k-htc-dbgsym on debian using aptitude, you will need to first install Aptitude in your debian. To install Aptitude follow the instructions <a href="https://netmiko.com/linux/debian/install-aptitude-and-synaptic-on-debian-20-04-and-18-04/">here</a>. Once you have aptitude installed proceed to the installation of firmware-ath9k-htc-dbgsym.</p>
+         <p>Now you will need to first update your package lists from the repositories, use the apt update command for that, after that update the package list of aptitude using the aptitude update command.</p>
+         <code>sudo apt update</code> <code>sudo aptitude update</code>
+         <p>After updating the package list of aptitude, install firmware-ath9k-htc-dbgsym using the command aptitude install firmware-ath9k-htc-dbgsym.</p>
+         <code>sudo aptitude -y install firmware-ath9k-htc-dbgsym</code>
+         <h2>How to Upgrade firmware-ath9k-htc-dbgsym on debian</h2>
+         <p>If you want to upgrade the firmware-ath9k-htc-dbgsym package on your debian to its latest version then here’s how you can do that using apt, apt-get, aptitude, and synaptic.</p>
+         <h3>Upgrade firmware-ath9k-htc-dbgsym using Apt & Apt-get</h3>
+         <p>To upgrade firmware-ath9k-htc-dbgsym to its latest version using apt or apt-get, you will need to open the terminal then run the <em>sudo apt update</em> command to update the package list, after that copy and paste the commands given below to upgrade firmware-ath9k-htc-dbgsym.</p>
+         <code>sudo apt install --only-upgrade firmware-ath9k-htc-dbgsym</code> <code>sudo apt-get install --only-upgrade firmware-ath9k-htc-dbgsym</code>
+         <h3>Upgrade firmware-ath9k-htc-dbgsym using Aptitude</h3>
+         <p>To upgrade firmware-ath9k-htc-dbgsym using aptitude you will need to again run the update command to update the package list, use command <em>sudo aptitude update</em> to do that. After that run the command given below to upgrade firmware-ath9k-htc-dbgsym.</p>
+         <code>sudo aptitude -y full-upgrade firmware-ath9k-htc-dbgsym</code>
+         <h3>Upgrade firmware-ath9k-htc-dbgsym using Synaptic</h3>
+         <p>To upgrade firmware-ath9k-htc-dbgsym using synaptic open synaptic using the command <em>sudo synaptic</em> or by going to the menu and searching for synaptic.</p>
+         <p>In synaptic click on the reload button, this will look for updates. After that you will need to search for firmware-ath9k-htc-dbgsym, now right-click firmware-ath9k-htc-dbgsym, and click on the mark for upgrade option.</p>
+         <p>Now to upgrade firmware-ath9k-htc-dbgsym just click on the apply button, then click on the apply button again in the summary screen.</p>
+         <h2>How To Uninstall firmware-ath9k-htc-dbgsym on debian</h2>
+         <p>If you want to remove and uninstall firmware-ath9k-htc-dbgsym from your debian then here’s how you can do that. To remove just firmware-ath9k-htc-dbgsym, you can use the command that is given below, copy the command, paste it in the command line then press enter.</p>
+         <code>sudo apt remove firmware-ath9k-htc-dbgsym</code>
+         <h3>Remove related packages, dependencies & configuration files of firmware-ath9k-htc-dbgsym</h3>
+         <p>To remove all the related packages, dependencies and configuration files of firmware-ath9k-htc-dbgsym you can use the command given below.</p>
+         <code>sudo apt -y purge firmware-ath9k-htc-dbgsym</code>
+         <h3>Remove firmware-ath9k-htc-dbgsym using Synaptic Package Manager</h3>
+         <p>You can also uninstall firmware-ath9k-htc-dbgsym using the synaptic package manager, first open synaptic using the command sudo synaptic or search and open it directly.</p>
+         <p>After that in synaptic search for firmware-ath9k-htc-dbgsym, right-click the firmware-ath9k-htc-dbgsym package and click on the Mark for Complete Removal option. Now to uninstall firmware-ath9k-htc-dbgsym click on the apply button then in summary click on apply again.</p>
+         <h2>Conclusion</h2>
+         <p>That is how you can install firmware-ath9k-htc-dbgsym on debian using the command line or using the synaptic package manager. I also showed you how you can uninstall and upgrade firmware-ath9k-htc-dbgsym using the command line or using the synaptic package manager.</p>
+         <p>If you need any help regarding the installation of firmware-ath9k-htc-dbgsym then send me a mail at netmikoblog@gmail.com, thank you.</p>
+      </div>
+      <!--left sidebar-->
+      <footer><span>Copyright © 2022 AOMIE.IN | Made with ❤ by AOMIE</footer>
+      <script type="text/javascript">function search(string){
+         window.find(string);
+         }
+      </script>
+      <!--place reserved for footer scripts one-->
+      <!--place reserved for footer scripts two-->
+      <!--place reserved for footer scripts three-->
+      <!--place reserved for footer scripts four-->
+      <!--place reserved for footer scripts five-->
+      <!--place reserved for footer scripts six-->
+      <!--place reserved for footer scripts seven-->
+   </body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>How to Install glib-networking on debian - AOMIE.IN</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="keywords" content="debian, package, glib-networking, install, terminal, command-line, console, install glib-networking">
+      <meta name="description" content="Install glib-networking on debian with and without using the command line">
+      <meta name="robots" content="index, follow">
+      <meta name="author" content="Aomie">
+      <link rel="icon" href="https://debian.aomie.in/favicon.ico" type="image/x-icon" />
+      <link href="https://aomie.in/css/index.css" rel="stylesheet" type="text/css">
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-RZ3RQDC2PG"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-RZ3RQDC2PG');
+</script>
+      <!--place reserved for scripts two-->
+      <!--place reserved for scripts three-->
+      <!--place reserved for scripts four-->
+      <!--place reserved for scripts five-->
+      <!--place reserved for scripts six-->
+      <!--place reserved for scripts seven-->
+   </head>
+   <body>
+      <!--menu-->
+      <div class="header"><a href="https://debian.aomie.in/"><img class="logo" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/logo_aomie_new.svg"></a></div>
+      <div class="navbar">
+         <a href="https://debian.aomie.in">Home</a>
+         <div class="subnav">
+            <button class="subnavbtn">Linux <span>&#9660;</span><i class="fa fa-caret-down"></i></button>
+            <div class="subnav-content"> <a href="../ubuntu/index.html">Ubuntu</a> <a href="../debian/index.html">Debian</a> <a href="../kali-linux/index.html">Kali Linux</a></div>
+         </div>
+         <a href="../pages/about.html">About Us</a> <a href="../pages/web-privacy.html">Privacy</a> <a href="../pages/contact.html">Contact</a>
+      </div>
+      <!--right sidebar-->
+      <div class="left">
+         <ol class="toc">
+            <li class="toc_li"> <a href="#Introduction">Introduction</a> </li>
+            <li class="toc_li"> <a href="#Install_glib-networking_Using_apt">Install glib-networking Using apt</a> </li>
+            <li class="toc_li"> <a href="#install-glib-networking-using-apt-get">Install glib-networking Using apt-get</a> </li>
+            <li class="toc_li"> <a href="#install-glib-networking-using-synaptic">Install glib-networking Using Synaptic</a> </li>
+            <li class="toc_li"> <a href="#install-glib-networking-using-aptitude">Install glib-networking Using aptitude</a> </li>
+            <li>
+               <a href="#how-to-upgrade-glib-networking-on-debian">How to Upgrade glib-networking on debian</a>
+               <ol>
+                  <li> <a href="#upgrade-glib-networking-using-apt-apt-get">Upgrade glib-networking using Apt & Apt-get
+                     </a> 
+                  </li>
+                  <li> <a href="#upgrade-glib-networking-using-aptitude">Upgrade glib-networking using Aptitude</a> </li>
+                  <li> <a href="#upgrade-glib-networking-using-synaptic">Upgrade glib-networking using Synaptic</a> </li>
+               </ol>
+            </li>
+            <li>
+               <a href="#how-to-uninstall-glib-networking-on-debian">How To Uninstall glib-networking on debian</a>
+               <ol>
+                  <li> <a href="#remove-related-packages-dependencies-configuration-files-of-glib-networking">Remove related packages, dependencies & configuration files of glib-networking</a> </li>
+                  <li> <a href="#remove-glib-networking-using-synaptic-package-manager">Remove glib-networking using Synaptic Package Manager</a> </li>
+               </ol>
+            </li>
+            <li class="toc_li"> <a href="#conclusion">Conclusion</a> </li>
+         </ol>
+      </div>
+      <!--left sidebar-->
+      <div class="right">
+         <a href="https://debian.aomie.in/video-tutorial.html"><img class="profile" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/watch-tutorial.svg"></a>
+         <a href="https://debian.aomie.in/index.html"><img class="profile" src="https://cdn.statically.io/img/netmiko.com/wp-content/uploads/2022/03/search-tutorials.svg"></a>
+      </div>
+      <!--main-->
+      <div class="main">
+         <!--breadcrumb-->
+         <h1>How to Install glib-networking on debian</h1>
+         <div class="breadcrumb">
+            <ul class="breadcrumb">
+               <li><a href="https://debian.aomie.in/">Home</a></li>
+               <li><a href="./index.html">debian</a></li>
+               <li><a href="./install-glib-networking-debian.html">glib-networking</a></li>
+            </ul>
+         </div>
+         <!--content-->
+         <p>Today in this tutorial, I’ll show you how you can install glib-networking on debian with and without using the command line.</p>
+         <h2>Introduction</h2>
+         <p>Installing glib-networking on debian is very easy. And with the help of this tutorial, you will be able to easily install, update and uninstall glib-networking in just a few steps.</p>
+         <p>In this tutorial I’ll show you four methods to install glib-networking, the methods are using <em>apt</em>, <em>apt-get</em>, <em>aptitude</em>, and <em>synaptic</em>. All these methods require you to have an active and stable internet connection and sudo permission.</p>
+         <h2>Install glib-networking Using apt</h2>
+         <p>To install glib-networking in debian using apt, you will need to run the apt update command first to get the updated list of packages from the repositories.</p>
+         <p>Copy the command given below and paste it in the command line, then press enter. If you are using the sudo command for the first time then you might also need to enter your root password.</p>
+         <code>sudo apt update</code>
+         <p>After you have updated the package list using apt, you can now install glib-networking using the apt install command. To do that use the command given below.</p>
+         <code>sudo apt -y install glib-networking</code>
+         <p>The installation of glib-networking might take a little bit of time depending upon your internet connection and machine configuration.</p>
+         <h2>Install glib-networking Using apt-get</h2>
+         <p>To install glib-networking using apt-get in debian, you will need to first update the package list using the apt-get update command. Copy, paste, and enter the command given below in the command line.</p>
+         <code>sudo apt-get update</code>
+         <p>After updating the package lists, use the apt-get install command given below to install glib-networking.</p>
+         <code>sudo apt-get -y install glib-networking</code>
+         <h2>Install glib-networking Using Synaptic</h2>
+         <p>To install glib-networking using Synaptic you will need to first install Synaptic, you can do that by following the instructions from <a href="https://netmiko.com/linux/debian/install-aptitude-and-synaptic-on-debian-20-04-and-18-04/">here</a>. After installing synaptic follow the steps below to install glib-networking on your debian using Synaptic.</p>
+         <p>You can open synaptic by clicking on the menu icon then searching for synaptic or you can open the command line and enter the command given below –</p>
+         <code>sudo synaptic</code>
+         <p>After synaptic opens, click on the search icon and search for glib-networking. This will display the glib-networking package in the package window, now to install glib-networking, click on the checkbox that is on the left side.</p>
+         <p>Then click on Mark for Installation, this will select the glib-networking package for installation, now to install it click on the Apply button, you will get a summary window where click on the apply button again to start the download of glib-networking.</p>
+         <p>If the download and installation are successful then the checkmark option will turn green.</p>
+         <h2>Install glib-networking Using aptitude</h2>
+         <p>To install glib-networking on debian using aptitude, you will need to first install Aptitude in your debian. To install Aptitude follow the instructions <a href="https://netmiko.com/linux/debian/install-aptitude-and-synaptic-on-debian-20-04-and-18-04/">here</a>. Once you have aptitude installed proceed to the installation of glib-networking.</p>
+         <p>Now you will need to first update your package lists from the repositories, use the apt update command for that, after that update the package list of aptitude using the aptitude update command.</p>
+         <code>sudo apt update</code> <code>sudo aptitude update</code>
+         <p>After updating the package list of aptitude, install glib-networking using the command aptitude install glib-networking.</p>
+         <code>sudo aptitude -y install glib-networking</code>
+         <h2>How to Upgrade glib-networking on debian</h2>
+         <p>If you want to upgrade the glib-networking package on your debian to its latest version then here’s how you can do that using apt, apt-get, aptitude, and synaptic.</p>
+         <h3>Upgrade glib-networking using Apt & Apt-get</h3>
+         <p>To upgrade glib-networking to its latest version using apt or apt-get, you will need to open the terminal then run the <em>sudo apt update</em> command to update the package list, after that copy and paste the commands given below to upgrade glib-networking.</p>
+         <code>sudo apt install --only-upgrade glib-networking</code> <code>sudo apt-get install --only-upgrade glib-networking</code>
+         <h3>Upgrade glib-networking using Aptitude</h3>
+         <p>To upgrade glib-networking using aptitude you will need to again run the update command to update the package list, use command <em>sudo aptitude update</em> to do that. After that run the command given below to upgrade glib-networking.</p>
+         <code>sudo aptitude -y full-upgrade glib-networking</code>
+         <h3>Upgrade glib-networking using Synaptic</h3>
+         <p>To upgrade glib-networking using synaptic open synaptic using the command <em>sudo synaptic</em> or by going to the menu and searching for synaptic.</p>
+         <p>In synaptic click on the reload button, this will look for updates. After that you will need to search for glib-networking, now right-click glib-networking, and click on the mark for upgrade option.</p>
+         <p>Now to upgrade glib-networking just click on the apply button, then click on the apply button again in the summary screen.</p>
+         <h2>How To Uninstall glib-networking on debian</h2>
+         <p>If you want to remove and uninstall glib-networking from your debian then here’s how you can do that. To remove just glib-networking, you can use the command that is given below, copy the command, paste it in the command line then press enter.</p>
+         <code>sudo apt remove glib-networking</code>
+         <h3>Remove related packages, dependencies & configuration files of glib-networking</h3>
+         <p>To remove all the related packages, dependencies and configuration files of glib-networking you can use the command given below.</p>
+         <code>sudo apt -y purge glib-networking</code>
+         <h3>Remove glib-networking using Synaptic Package Manager</h3>
+         <p>You can also uninstall glib-networking using the synaptic package manager, first open synaptic using the command sudo synaptic or search and open it directly.</p>
+         <p>After that in synaptic search for glib-networking, right-click the glib-networking package and click on the Mark for Complete Removal option. Now to uninstall glib-networking click on the apply button then in summary click on apply again.</p>
+         <h2>Conclusion</h2>
+         <p>That is how you can install glib-networking on debian using the command line or using the synaptic package manager. I also showed you how you can uninstall and upgrade glib-networking using the command line or using the synaptic package manager.</p>
+         <p>If you need any help regarding the installation of glib-networking then send me a mail at netmikoblog@gmail.com, thank you.</p>
+      </div>
+      <!--left sidebar-->
+      <footer><span>Copyright © 2022 AOMIE.IN | Made with ❤ by AOMIE</footer>
+      <script type="text/javascript">function search(string){
+         window.find(string);
+         }
+      </script>
+      <!--place reserved for footer scripts one-->
+      <!--place reserved for footer scripts two-->
+      <!--place reserved for footer scripts three-->
+      <!--place reserved for footer scripts four-->
+      <!--place reserved for footer scripts five-->
+      <!--place reserved for footer scripts six-->
+      <!--place reserved for footer scripts seven-->
+   </body>
+</html>
